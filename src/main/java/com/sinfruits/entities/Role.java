@@ -1,6 +1,5 @@
 package com.sinfruits.entities;
 
-import com.sinfruits.enums.RoleName;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -23,8 +22,8 @@ public class Role {
 
     @NotNull
     @Enumerated(EnumType.STRING)
-    private RoleName role_name;
+    private String role_name;
 
-    @OneToMany(mappedBy = "role_id")
+    @OneToMany(mappedBy = "role")
     private Set<User> user = new HashSet<>();
 }

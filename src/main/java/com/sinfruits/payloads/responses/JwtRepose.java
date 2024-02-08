@@ -1,10 +1,10 @@
 package com.sinfruits.payloads.responses;
 
-public class JwtResponse {
+public class JwtRepose {
     private String accessToken;
     private String tokenType = "Bearer";
 
-    public JwtResponse(String accessToken) {
+    public JwtRepose(String accessToken) {
         this.accessToken = accessToken;
     }
 }
