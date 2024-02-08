@@ -1,6 +1,6 @@
 package com.sinfruits.enums;
 
-public enum Role {
+public enum RoleName {
     ADMIN,
     USER,
 }
